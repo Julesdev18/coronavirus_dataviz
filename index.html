@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 a.k.a. Coronavirus</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body style="background: #f2f2f2;">
+    <div class="container">
+      <h1 class="text-center my-3">COVID-19 a.k.a. Coronavirus</h1>
+      <h3 class="text-center mb-3">DATAVIZ</h3>
+      <p>Source des données: Rapport de l'OMS du 17/03/2020 <a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200317-sitrep-57-covid-19.pdf?sfvrsn=a26922f2_2">cliquez ici pour voir le rapport</a></p>
+      <canvas id="firstChart" width="600" height="400" style="max-width: 850px; margin: auto;"></canvas>
+      <canvas id="secondChart" class="mt-5" width="600" height="400" style="max-width: 850px; margin: auto;"></canvas>
+      <hr class="my-5">
+      <h3 class="text-center mb-5">Les derniers tweets avec le #coronavirus</h3>
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+        <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">T’es un ancien si ta connu l’époque où on pouvais appuyez sur les bouton d’ascenseur avec nos doigts <a href="https://twitter.com/hashtag/Confinementotal?src=hash&amp;ref_src=twsrc%5Etfw">#Confinementotal</a> <a href="https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#coronavirus</a> <a href="https://t.co/v9Eyy2ioL8">pic.twitter.com/v9Eyy2ioL8</a></p>&mdash; JRD - reel (@JrdReel) <a href="https://twitter.com/JrdReel/status/1240213364703481857?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/StopAuxVols?src=hash&amp;ref_src=twsrc%5Etfw">#StopAuxVols</a> <a href="https://twitter.com/hashtag/Coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#Coronavirus</a> | Malgré l&#39;absence de risque de pénurie alimentaire, 3 individus ont cette nuit tenté de voler de la nourriture dans un supermarché de <a href="https://twitter.com/hashtag/TremblayEnFrance?src=hash&amp;ref_src=twsrc%5Etfw">#TremblayEnFrance</a>.<br>Intervention rapide des 👮‍♀️👮‍♂️ qui les ont surpris remplissant des caddies de nourriture.<br>➡️1 GAV <a href="https://t.co/zBJiUtBpwm">pic.twitter.com/zBJiUtBpwm</a></p>&mdash; Préfecture de Police (@prefpolice) <a href="https://twitter.com/prefpolice/status/1240212465088159744?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="fr" dir="ltr"><a href="https://twitter.com/hashtag/Coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#Coronavirus</a> En Italie, manger pour tromper l&#39;ennui... et la pandémie <a href="https://t.co/e0fGE9HzwX">https://t.co/e0fGE9HzwX</a> <a href="https://t.co/z9pW7yn4FM">pic.twitter.com/z9pW7yn4FM</a></p>&mdash; Courrier picard (@CourrierPicard) <a href="https://twitter.com/CourrierPicard/status/1240212788292792321?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Je suis obliger de partager cette trouvaille ! 😂😂😂👌<a href="https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#coronavirus</a> <a href="https://t.co/ZX1LQEbggT">pic.twitter.com/ZX1LQEbggT</a></p>&mdash; X-or (@x_xdir) <a href="https://twitter.com/x_xdir/status/1240205924947591168?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <blockquote class="twitter-tweet"><p lang="fr" dir="ltr">Il y a des priorités dans les urgences pour combattre les fléaux. <br>Les chercheurs du monde entier abandonnent les recherches sur un vaccin 💉 contre le <a href="https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#coronavirus</a> pour concentrer leurs efforts sur un remède efficace contre <a href="https://twitter.com/RoyalSegolene?ref_src=twsrc%5Etfw">@RoyalSegolene</a>. <a href="https://t.co/vysjIpdWcw">pic.twitter.com/vysjIpdWcw</a></p>&mdash; Jérôme Godefroy (@jeromegodefroy) <a href="https://twitter.com/jeromegodefroy/status/1240203363402293249?ref_src=twsrc%5Etfw">March 18, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
